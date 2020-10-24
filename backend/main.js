@@ -11,7 +11,6 @@ process.on('uncaughtException', function (err) {
 
 const app = express()
 
-
 const port = process.env.PORT || config.port;
 
 var rawBodySaver = function (req, res, buf, encoding) {
