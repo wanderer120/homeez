@@ -1,0 +1,9 @@
+{
+   "cmsConnection":{
+      "user":"rminwmwkdhuqev",
+      "host":"ec2-54-164-134-207.compute-1.amazonaws.com",
+      "database":"d9i24rt4t7476a",
+      "password":"2e21bbf8cfb0eb888d16766a9707f1b1fb32190a2b396bc9c457f3796d86b1a8",
+      "port":5432
+   }
+}
