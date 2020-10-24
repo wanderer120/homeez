@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Contacts from './component/contacts';
 import Tabs from './component/Tabs';
 import Quotations from './component/Quotations';
 import QuotationPage from './component/QuotationPage';
@@ -10,14 +9,16 @@ class App extends Component {
 
   render() {
     return (
-      <Tabs>
-      <div label="Insert">
-        <InsertPage />
-      </div>
-       <div label="Display">
-         <QuotationPage />
-       </div>
-     </Tabs>
+      <div>
+        <Tabs>
+        <div label="Insert">
+          <InsertPage />
+        </div>
+         <div label="Display">
+           <QuotationPage />
+         </div>
+       </Tabs>
+     </div>
     );
   }
 }
