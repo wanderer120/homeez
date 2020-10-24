@@ -19,6 +19,13 @@ var rawBodySaver = function (req, res, buf, encoding) {
     req.rawBody = buf.toString(encoding || 'utf8');
   }
 }
+
+app.use(function(req, res, next) {
+       res.header("Access-Control-Allow-Origin", "*");
+       res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+       res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+          next();
+    });
 app.use(bodyParser.json({ verify: rawBodySaver }));
 app.use(bodyParser.urlencoded({ verify: rawBodySaver, extended: true }));
 app.use(bodyParser.raw({ verify: rawBodySaver, type: function () { return true } }));
