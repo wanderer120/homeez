@@ -7,7 +7,7 @@ class App extends Component {
         quotations: []
       };
   componentDidMount() {
-    fetch('http://localhost:3000/getQuotations')
+    fetch('http://ec2-3-138-137-217.us-east-2.compute.amazonaws.com:3000/getQuotations')
     .then(res => res.json())
     .then((data) => {
       this.setState({ quotations: data })
