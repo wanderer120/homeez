@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-import Contacts from './component/contacts';
-import Quotations from './component/Quotations';
+import Quotations from './quotations';
 
-class App extends Component {
+class QuotationPage extends Component {
   state = {
         quotations: []
       };
   componentDidMount() {
-    fetch('http://localhost:3000/getQuotations')
+    fetch('https://testreact-backend.herokuapp.com')
     .then(res => res.json())
     .then((data) => {
       this.setState({ quotations: data })
     })
     .catch(console.log)
   }
-
   render() {
     return (
       <Quotations quotations={this.state.quotations} />
@@ -22,4 +20,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default QuotationPage
