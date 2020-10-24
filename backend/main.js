@@ -33,9 +33,8 @@ app.get('/', (request, response) => {
 })
 
 
-app.get('/getPlayers', db.getPlayers)
-app.get('/getWonderpotByAgent/:agentId', db.getWonderpotByAgent)
-app.put('/addWonderpotByAgent/:agentId', db.addWonderpotByAgent)
+app.get('/getQuotations', db.getQuotations)
+app.put('/addQuotation', db.addQuotation)
 
 
 app.use(function(error, req, res, next) {
