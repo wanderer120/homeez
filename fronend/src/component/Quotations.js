@@ -4,15 +4,16 @@ const Quotations = ({ quotations }) => {
   return (
     <div>
       <center><h1>Quotations</h1></center>
+      <table>
+      <tr><th>q_id</th><th>quotation_info</th><th>quatation_valid</th></tr>
       {quotations.map((quotations) => (
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">{quotations.q_id}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{quotations.quotation_info}</h6>
-            <p class="card-text">{quotations.quatation_valid}</p>
-          </div>
-        </div>
+        <tr>
+        <td>{quotations.q_id.toString()}</td>
+        <td>{quotations.quotation_info}</td>
+        <td>{quotations.quatation_valid.toString()}</td>
+        </tr>
       ))}
+      </table>
     </div>
   )
 };
