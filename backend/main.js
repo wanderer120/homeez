@@ -1,6 +1,7 @@
 const config = require('./config/main.json')
 
 const express = require('express')
+const cors = require('cors');
 const bodyParser = require('body-parser')
 const db = require('./queries')
 
@@ -33,8 +34,8 @@ app.get('/', (request, response) => {
 })
 
 
-app.get('/getQuotations', db.getQuotations)
-app.put('/addQuotation', db.addQuotation)
+app.get('/getQuotations', cors(), db.getQuotations)
+app.put('/addQuotation', cors(), db.addQuotation)
 
 
 app.use(function(error, req, res, next) {
