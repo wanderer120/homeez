@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/homeez/static/css/main.8a6d5d88.chunk.css",
+    "main.js": "/homeez/static/js/main.ecbaa64b.chunk.js",
+    "main.js.map": "/homeez/static/js/main.ecbaa64b.chunk.js.map",
+    "runtime-main.js": "/homeez/static/js/runtime-main.ba4d256c.js",
+    "runtime-main.js.map": "/homeez/static/js/runtime-main.ba4d256c.js.map",
+    "static/js/2.ac928b63.chunk.js": "/homeez/static/js/2.ac928b63.chunk.js",
+    "static/js/2.ac928b63.chunk.js.map": "/homeez/static/js/2.ac928b63.chunk.js.map",
+    "static/js/3.f3c56b46.chunk.js": "/homeez/static/js/3.f3c56b46.chunk.js",
+    "static/js/3.f3c56b46.chunk.js.map": "/homeez/static/js/3.f3c56b46.chunk.js.map",
+    "index.html": "/homeez/index.html",
+    "static/css/main.8a6d5d88.chunk.css.map": "/homeez/static/css/main.8a6d5d88.chunk.css.map",
+    "static/js/2.ac928b63.chunk.js.LICENSE.txt": "/homeez/static/js/2.ac928b63.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba4d256c.js",
+    "static/js/2.ac928b63.chunk.js",
+    "static/css/main.8a6d5d88.chunk.css",
+    "static/js/main.ecbaa64b.chunk.js"
+  ]
+}
